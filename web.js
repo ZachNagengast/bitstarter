@@ -6,7 +6,7 @@ var buf = new Buffer(fs.readFileSync('index.html'));
 var text = buf.toString('utf8');
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send("Derp");
 });
 
 var port = process.env.PORT || 5000;
